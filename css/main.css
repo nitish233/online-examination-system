@@ -1,0 +1,189 @@
+body
+{
+overflow-x:hidden;
+width:100%;
+font: 15px "Century Gothic", "Times Roman", sans-serif;
+background:#eee;
+min-height:550px;
+background-attachment:static;
+}
+.bg
+{
+    background:url(../image/austin-distel-goFBjlQiZFU-unsplash.jpg);
+    background-size: auto;
+    position: static;
+    height: 80vh;
+    min-height:600px;
+}
+.bg1
+{
+background:url(../image/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg);
+background-size: 100%;
+
+position: static;
+    height: 20vh;
+min-height:600px;
+}
+.bg2
+{
+    background:url(../image/austin-distel-goFBjlQiZFU-unsplash.jpg);
+    background-size: auto;
+    position: static;
+    height: 70vh;
+    min-height:600px;
+    
+}
+
+@font-face {
+   font-family: 'typo';
+    src: url('../fonts/typo.ttf');
+	}
+
+@font-face {
+   font-family: 'gothic';
+    src: url('../fonts/gothics.ttf');
+	}
+
+.panel{
+border-color:rgb(85, 183, 240);
+margin:40px;
+padding:20px;
+font: 15px "Century Gothic", "Times Roman", sans-serif;
+position: static;
+}
+
+.title
+{
+font-family:'typo';
+}
+
+.header
+{
+background:#5356f0;
+height:70px;
+}
+.logo
+{
+font-family:'typo';
+font-size:35px;
+color:#eeebe4;
+margin:15px;
+}
+
+.title1{
+font: 16px "Century Gothic", "Times Roman", sans-serif;
+}
+.title2{
+font-family: 'Ubuntu', sans-serif;
+font-size:20px;
+}
+
+
+.sub1
+{
+width:90px;
+color:#080808;
+background:rgb(235, 3, 3);
+font-size:15px;
+height:35px;
+margin:20px;
+padding:10px;
+width:100px;
+}
+
+
+.sub
+{
+width:100%;
+background-color:rgb(49, 247, 49);
+font-size:20px;
+padding:2px;
+margin-top:15px;
+margin-right:20px;
+}
+.sub:hover
+{
+color:rgb(245, 52, 78);
+}
+
+.footer
+{
+font-size:15px;
+text-align:center;
+border-top:1px solid;
+border-color:#010224;
+background-color:#3b12f3;
+margin-bottom:-100px
+position: static;
+}
+.footer a
+{
+margin:25px;
+color:white;
+text-decoration:none;
+font: 15px "Century Gothic", "Times Roman", sans-serif;
+position: static;
+
+}
+.footer a:hover
+{
+text-decoration:none;
+color:#9acd32;
+border-top:2px solid;
+border-color:rgb(238, 235, 229);
+position: static;
+
+}
+
+.box
+{
+padding:9px;
+}
+hr{
+color:#000000;
+}
+.top
+{
+margin-top:20px;
+}
+.log1
+{
+font: 15px 'Ubuntu', sans-serif;
+color:white;
+margin-left:10px;
+}
+
+.log
+{
+margin:10px;
+margin-right:60px;
+margin-left:5px;
+color:rgb(236, 232, 225);
+text-decoration:none;
+font-size:20px;
+font-size:15px;
+}
+.log:hover
+{
+color:#9acd32;
+border-top:2px solid;
+border-color:rgb(240, 239, 237);
+text-decoration:none;
+}
+footer {
+    background: linear-gradient(blue,rgb(2, 121, 233));
+    text-align: center;
+    margin-bottom: -10px;
+    padding-bottom: 10px;
+    position: static;
+}
+
+	.login-left{
+		background: rgba(211,211,211,0.5);
+		padding: 20px;
+    }
+    .login-right{
+		background: rgba(211,211,211,0.5);
+        padding: 30px;
+    }
+    
