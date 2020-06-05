@@ -58,66 +58,105 @@
 
 </head>
 
+
 <body>
+
     <div class="header">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-3">
                 <span class="logo">ONLINE TEST</span></div>
-            <div class="col-md-2 col-md-offset-4">
-                <a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;<span class="title1"><b>Signin</b></span></a></div>
-            <!--sign in modal start-->
-            <div class="modal fade" id="myModal">
-                <div class="modal-dialog">
-                    <div class="modal-content title1">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title title1"><span style="color:orange">Log In</span></h4>
-                        </div>
-                        <div class="modal-body">
-                            <form class="form-horizontal" action="login.php?q=index.php" method="POST">
-                                <fieldset>
-
-
-                                    <!-- Text input-->
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="email"></label>
-                                        <div class="col-md-6">
-                                            <input id="email" name="email" placeholder="Enter your email-id" class="form-control input-md" type="email" required="email">
-
-                                        </div>
-                                    </div>
-
-
-                                    <!-- Password input-->
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="password"></label>
-                                        <div class="col-md-6">
-                                            <input id="password" name="password" placeholder="Enter your Password" class="form-control input-md" type="password" required="Password">
-
-                                        </div>
-                                    </div>
-
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Log in</button>
-                        </fieldset>
-                        </form>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-        <!--sign in modal closed-->
+            <div class="row footer">
+                <a href="https://www.onlineexambuilder.com/knowledge-center/exam-knowledge-center/what-is-online-examination/item10247" target="_blank">About us</a>
+                <a href="#" data-toggle="modal" data-target="#login">Admin Login</a>
+                <a href="#" data-toggle="modal" data-target="#developers">Developers</a>
+                <a href="feedback.php" target="_blank">Feedback</a>
+                <a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;<span class="title1"><b>Signin</b></span></a>
+            </div>
+        </div>
     </div>
-    </div>
+    <h1 style="font-size:150%; color:grey; text-align:center; padding:-200px;"><strong> “If you can dream it, you can do it.”</strong></h1>
+
+    <!--sign in modal start-->
+    <div class="overlay">
+
+        <div class="main-frame text-left">
+            <h1 style="font-size:300%; color:aliceblue; margin-left:50px;"><strong>TEST YOUR ELEGIBILITY</strong></h1>
+            <h3 style=" color:aliceblue; margin-left:50px;">Online Exam Portal</h3>
+            <h3 style=" color:aliceblue; margin-left:900px;"><strong> we are offering</strong></h3>
+            <h3 style=" color:aliceblue; margin-left:750px;">It test and notes</h3>
+            <h5 style=" color:aliceblue; margin-left:800px;">1.C </h5>
+            <h5 style=" color:aliceblue; margin-left:800px;">2.cpp </h5>
+            <h5 style=" color:aliceblue; margin-left:800px;">3.JAVA </h5>
+            <h5 style=" color:aliceblue; margin-left:800px;">4.LINUX </h5>
+            <h5 style=" color:aliceblue; margin-left:800px;">5.PHP </h5>
+            <h5 style=" color:aliceblue; margin-left:800px;">6..NET </h5>
+            <h3 style=" color:aliceblue; margin-left:1050px; margin-top:-190px">competitive test and notes</h3>
+            <h5 style=" color:aliceblue; margin-left:1100PX;">1.BANKING </h5>
+            <h5 style=" color:aliceblue; margin-left:1100px;">2.SSC </h5>
+            <h5 style=" color:aliceblue; margin-left:1100px;">3.RAILWAY </h5>
+            <h5 style=" color:aliceblue; margin-left:1100px;">4.PCS </h5>
+            <h5 style=" color:aliceblue; margin-left:1100px;">5.LDC </h5>
+            <h5 style=" color:aliceblue; margin-left:1100px;">6.MTS </h5>
+            <h1 style="font-size:300%; color:aliceblue; margin-left:400px; margin-top:150px;"></h1>
+            <h1>
+                <marquee style=" color:aliceblue;margin-top:100px;"><a href="#"><strong>*WE REQUEST SIGN IN FIRST*</strong></a></marquee>
+            </h1>
+
+        </div>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content title1">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title title1"><span style="color:orange">Log In</span></h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal" action="login.php?q=index.php" method="POST">
+                            <fieldset>
+
+
+                                <!-- Text input-->
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label" for="email"></label>
+                                    <div class="col-md-6">
+                                        <input id="email" name="email" placeholder="Enter your email-id" class="form-control input-md" type="email" required="email">
+
+                                    </div>
+                                </div>
+
+
+                                <!-- Password input-->
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label" for="password"></label>
+                                    <div class="col-md-6">
+                                        <input id="password" name="password" placeholder="Enter your Password" class="form-control input-md" type="password" required="Password">
+
+                                    </div>
+                                </div>
+                            </fieldset>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Log in</button>
+                    </fieldset>
+                    </form>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <!--sign in modal closed-->
+
+
     <!--header row closed-->
     </div>
-
+    </div>
     <div class="bg1">
+
         <div class="row">
 
-            <div class="col-md-7"></div>
+            <div class="col-md-5"></div>
             <div class="col-md-4 panel">
                 <!-- sign in form begins -->
                 <form class="form-horizontal" name="form" action="sign.php?q=account.php" onSubmit="return validateForm()" method="POST">
@@ -199,22 +238,11 @@
             <!--col-md-6 end-->
         </div>
     </div>
+
     </div>
     <!--container end-->
 
-    <!--Footer start-->
-    <div class="row footer">
-        <div class="col-md-3 box">
-            <a href="https://www.onlineexambuilder.com/knowledge-center/exam-knowledge-center/what-is-online-examination/item10247" target="_blank">About us</a>
-        </div>
-        <div class="col-md-3 box">
-            <a href="#" data-toggle="modal" data-target="#login">Admin Login</a></div>
-        <div class="col-md-3 box">
-            <a href="#" data-toggle="modal" data-target="#developers">Developers</a>
-        </div>
-        <div class="col-md-3 box">
-            <a href="feedback.php" target="_blank">Feedback</a></div>
-    </div>
+
     <!-- Modal For Developers-->
     <div class="modal fade title1" id="developers">
         <div class="modal-dialog">
@@ -229,12 +257,10 @@
                     <p>
                         <div class="row">
                             <div class="col-md-4">
-                                <!--<img src="image/CAM00121.jpg" width=100 height=100 alt="Sunny Prakash Tiwari" class="img-rounded">-->
                             </div>
                             <div class="col-md-5">
                                 <a href="http://yugeshverma.blogspot.in" style="color:#202020; font-family:'typo' ; font-size:18px" title="Find on Facebook">Nitish sharma</a>
-                                <h4 style="color:#202020; font-family:'typo' ;font-size:16px" class="title1">+91
-                                    7004246538</h4>
+                                <h4 style="color:#202020; font-family:'typo' ;font-size:16px" class="title1">+917004246538</h4>
                                 <h4 style="font-family:'typo' ">nitishsharma661@gmail.com</h4>
                                 <h4 style="font-family:'typo' ">Aisect University, Hazaribagh</h4>
                             </div>
@@ -260,35 +286,30 @@
                         <div class="col-md-6">
                             <form role="form" method="post" action="admin.php?q=index.php">
                                 <div class="form-group">
-                                    <input type="text" name="uname" maxlength="20" placeholder="Admin user id" class="form-control" required="name/> 
-</div>
-<div class=" form-group">
-                                    <input type="password" name="password" maxlength="15" placeholder="Password" class="form-control" required="Password" />
+                                    <input type="text" name="uname" maxlength="50" placeholder="Admin user id" class="form-control" required="name" />
+                                </div>
+                                <div class=" form-group">
+                                    <input type="password" name="password" maxlength="50" placeholder="Password" class="form-control" required="Password" />
                                 </div>
                                 <div class="form-group" align="center">
                                     <input type="submit" name="login" value="Login" class="btn btn-primary" />
                                 </div>
                             </form>
                         </div>
-                        <div class="col-md-3"></div>
                     </div>
                 </div>
-                <!--<div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>-->
+
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
     <!--footer end-->
-
 </body>
 <footer>
-    <div class="footer">
-        <h2>
+    <div class="footerb">
+        <h3>
             <marquee behavior="" direction="left"><a href="#">THIS SITE IS CREATED BY NITISH</a></marquee>
-        </h2>
+        </h3>
     </div>
 </footer>
-
 
 </html>

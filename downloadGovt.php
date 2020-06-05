@@ -1,5 +1,4 @@
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -17,44 +16,48 @@
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <!--alert message-->
-    <?php if(@$_GET['w'])
-    {echo'<script>alert("'.@$_GET['w'].'");</script>';}
+    <?php if (@$_GET['w']) {
+        echo '<script>alert("' . @$_GET['w'] . '");</script>';
+    }
     ?>
     <!--alert message end-->
 
 </head>
 <?php
-  include_once 'dbConnection.php';
+include_once 'dbConnection.php';
 ?>
 
 <body>
     <div class="header">
         <div class="row">
-            <div class="col-lg-6">
-                <span class="logo">ONLINE TEST</span></div>
-            <div class="col-md-4 col-md-offset-2">
-                <?php
- include_once 'dbConnection.php';
-session_start();
-  if(!(isset($_SESSION['email']))){
-header("location:index.php");
+            <span class="logo">ONLINE TEST</span>
 
-}
-else
-{
-$name = $_SESSION['name'];
-$email=$_SESSION['email'];
+            <div class="row footer">
+                <div class="col-lg-8 col-md-offset-8">
 
-include_once 'dbConnection.php';
-echo '<span class="pull-right top title1" ><span class="log1"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;&nbsp;Hello,</span> <a href="account.php?q=1" class="log log1">'.$name.'</a>&nbsp;|&nbsp;<a href="logout.php?q=account.php" class="log"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>&nbsp;Signout</button></a></span>';
-}
-?>
+                    <a href="https://www.onlineexambuilder.com/knowledge-center/exam-knowledge-center/what-is-online-examination/item10247" target="_blank">About us</a>
+                    <a href="#" data-toggle="modal" data-target="#developers">Developers</a>
+                    <a href="feedback.php" target="_blank">Feedback</a>
+                </div>
             </div>
         </div>
-    </div>
+        <?php
+        include_once 'dbConnection.php';
+        session_start();
+        if (!(isset($_SESSION['email']))) {
+            header("location:index.php");
+        } else {
+            $name = $_SESSION['name'];
+            $email = $_SESSION['email'];
+
+            include_once 'dbConnection.php';
+            echo '<span class="pull-right top title1" ><span class="log1"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;&nbsp;Hello,</span> <a href="account.php?q=1" class="log log1">' . $name . '</a>&nbsp;|&nbsp;<a href="logout.php?q=account.php" class="log"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>&nbsp;Signout</button></a></span>';
+        }
+        ?>
     </div>
 
-    
+
+
     <div class="bg">
 
         <!--navigation menu-->
@@ -62,8 +65,7 @@ echo '<span class="pull-right top title1" ><span class="log1"><span class="glyph
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -76,17 +78,11 @@ echo '<span class="pull-right top title1" ><span class="log1"><span class="glyph
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <h4 class="modal-title"><span style="color:grey;font-family:'typo' "> NOTES PDF</span></h4>
-                        <li <?php if(@$_GET['q']==1) echo'class="active"'; ?>><a href="account.php?q=1"><span
-                                    class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Home<span
-                                    class="sr-only">(current)</span></a></li>
-                        <li <?php if(@$_GET['q']==2) echo'class="active"'; ?>><a href="downloadIT.php"><span
-                                    class="computer" aria-hidden="true"></span>&nbsp;IT Notes</a></li>
-                        <li <?php if(@$_GET['q']==2) echo'class="active"'; ?>><a href="downloadGovt.php"><span
-                                    class="computer" aria-hidden="true"></span>&nbsp;Govt. Exam Notes</a></li>
+                        <li <?php if (@$_GET['q'] == 1) echo 'class="active"'; ?>><a href="account.php?q=1"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Home<span class="sr-only">(current)</span></a></li>
+                        <li <?php if (@$_GET['q'] == 2) echo 'class="active"'; ?>><a href="downloadIT.php"><span class="computer" aria-hidden="true"></span>&nbsp;IT Notes</a></li>
+                        <li <?php if (@$_GET['q'] == 2) echo 'class="active"'; ?>><a href="downloadGovt.php"><span class="computer" aria-hidden="true"></span>&nbsp;Govt. Exam Notes</a></li>
 
-                        <li class="pull-right"> <a href="logout.php?q=account.php"><span
-                                    class="glyphicon glyphicon-log-out"
-                                    aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;&nbsp;Signout</a></li>
+                        <li class="pull-right"> <a href="logout.php?q=account.php"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;&nbsp;Signout</a></li>
                     </ul>
 
 
@@ -151,8 +147,7 @@ font-family:'typo',cursive;
     <!--Footer start-->
     <div class="row footer">
         <div class="col-md-3 box">
-            <a href="https://www.onlineexambuilder.com/knowledge-center/exam-knowledge-center/what-is-online-examination/item10247"
-                target="_blank">About </a>
+            <a href="https://www.onlineexambuilder.com/knowledge-center/exam-knowledge-center/what-is-online-examination/item10247" target="_blank">About </a>
         </div>
 
 
@@ -161,8 +156,7 @@ font-family:'typo',cursive;
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span
-                                aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                         <h4 class="modal-title"><span style="color:orange;font-family:'typo' ">LOGIN</span></h4>
                     </div>
                     <div class="modal-body title1">
@@ -171,12 +165,10 @@ font-family:'typo',cursive;
                             <div class="col-md-6">
                                 <form role="form" method="post" action="admin.php?q=index.php">
                                     <div class="form-group">
-                                        <input type="text" name="uname" maxlength="20" placeholder="Admin user id"
-                                            class="form-control" />
+                                        <input type="text" name="uname" maxlength="20" placeholder="Admin user id" class="form-control" />
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" name="password" maxlength="15" placeholder="Password"
-                                            class="form-control" />
+                                        <input type="password" name="password" maxlength="15" placeholder="Password" class="form-control" />
                                     </div>
                                     <div class="form-group" align="center">
                                         <input type="submit" name="login" value="Login" class="btn btn-primary" />
@@ -199,12 +191,12 @@ font-family:'typo',cursive;
 
 
 
-<footer>
-    <div class="footer">
-        <h2>
-            <marquee behavior="" direction="left"><a href="#">THIS SITE IS CREATED BY NITISH</a></marquee>
-        </h2>
-    </div>
+    <footer>
+        <div class="footer">
+            <h2>
+                <marquee behavior="" direction="left"><a href="#">THIS SITE IS CREATED BY NITISH</a></marquee>
+            </h2>
+        </div>
 </body>
 </footer>
 

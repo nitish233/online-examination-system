@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `admin` (
   `admin_id` int(11) NOT NULL,
-  `email` varchar(50) NOT NULL,
+  `email` varchar(500) NOT NULL,
   `password` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -37,8 +37,9 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`admin_id`, `email`, `password`) VALUES
-(1, 'sunnygkp10@gmail.com', '123456'),
-(2, 'admin@admin.com', 'admin');
+(1, 'admin', '123456'),
+(2, 'nitish', '123456')
+(3, 'nitishsharma661@gmail.com', '123456');
 
 -- --------------------------------------------------------
 
